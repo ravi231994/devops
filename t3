@@ -1,0 +1,123 @@
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop
+$ git clone https://github.com/ravi231994/devops.git
+Cloning into 'devops'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop
+$ cd b
+bash: cd: b: No such file or directory
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop
+$ cd d
+bash: cd: d: No such file or directory
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop
+$ cd devops/
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ ls -a
+./  ../  .git/  README.md
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git remote -v
+origin  https://github.com/ravi231994/devops.git (fetch)
+origin  https://github.com/ravi231994/devops.git (push)
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ clear
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ touch t1 t2 t3
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ ls
+README.md  t1  t2  t3
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git add .
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   t1
+        new file:   t2
+        new file:   t3
+
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git commit -m "initial commit all files"
+[master 5950395] initial commit all files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 t1
+ create mode 100644 t2
+ create mode 100644 t3
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ravi231994/devops.git
+   35d3433..5950395  master -> master
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git log
+commit 5950395663696f97cc68cdbce7e186d3b0be8b91 (HEAD -> master, origin/master, origin/HEAD)
+Author: ravi teja <ravi231994@gmail.com>
+Date:   Wed Apr 11 11:50:51 2018 +0530
+
+    initial commit all files
+
+commit 35d343303f9bee4cc802f8658eb035c6caba0204
+Author: ravi231994 <38205198+ravi231994@users.noreply.github.com>
+Date:   Wed Apr 11 11:43:37 2018 +0530
+
+    Update README.md
+
+commit 57fd7c8852a33100eba8792b57aecca610af8ba6
+Author: ravi231994 <38205198+ravi231994@users.noreply.github.com>
+Date:   Wed Apr 11 11:41:30 2018 +0530
+
+    Initial commit
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git log --one line
+fatal: ambiguous argument 'line': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git log--oneline
+git: 'log--oneline' is not a git command. See 'git --help'.
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ git log --oneline
+5950395 (HEAD -> master, origin/master, origin/HEAD) initial commit all files
+35d3433 Update README.md
+57fd7c8 Initial commit
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$ atom .
+
+
+Ravi Teja Reddy@DESKTOP-NB8NU1U MINGW64 ~/Desktop/devops (master)
+$
+hi
